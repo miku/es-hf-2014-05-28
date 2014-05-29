@@ -29,7 +29,7 @@ Observations and Questions
 --------------------------
 
 * Super fast!
-* Fuzzy matching can be nice, but can also hide better hits.
+* Fuzzy matching can be nice, but can also hide "better" hits.
 * Can use simple analyzer and add more tokens to `input`.
 * Experiment more with different `input`, e.g. word bigrams, ...
 
