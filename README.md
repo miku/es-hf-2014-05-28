@@ -22,6 +22,8 @@ Applied to real library data, four indices with about 1M documents in total.
 
 Indexed `input` are the full title and title word unigrams.
 
+Main code is in [v1/build/instant.js](https://github.com/miku/elasticsearch-hackfest-2014-05-28/blob/master/v1/build/instant.js).
+
 
 Obeservations and Questions
 ---------------------------
