@@ -42,7 +42,7 @@ Obeservations and Questions
 See it in Action
 ----------------
 
-![https://mediacru.sh/seoCa5-ohaVv](https://mediacru.sh/seoCa5-ohaVv/direct)
+A 30s screen recording as GIF: https://mediacru.sh/seoCa5-ohaVv
 
 Dev
 ---
