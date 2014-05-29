@@ -34,7 +34,7 @@ Observations and Questions
 * Experiment more with different `input`, e.g. word bigrams, ...
 
 * Is it feasible to use the fast completion suggester as a hook and load more info in subsequent request?
-* How to prevent to much flickering? Query Throttling?
+* How to prevent too much flickering? Query Throttling?
 * How to make React frontend mobile friendly?
 * ...
 
