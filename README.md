@@ -42,7 +42,7 @@ Obeservations and Questions
 See it in Action
 ----------------
 
-![GIF at https://mediacru.sh/seoCa5-ohaVv](https://mediacru.sh/seoCa5-ohaVv)
+![GIF at https://mediacru.sh/seoCa5-ohaVv](https://mediacru.sh/seoCa5-ohaVv/direct)
 
 Dev
 ---
