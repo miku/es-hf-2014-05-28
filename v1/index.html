@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>    
+    <script src="build/react.js"></script>
+    <script src="build/JSXTransformer.js"></script>
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/foundation.css">    
+    <style type="text/css">
+    body {
+        background: #eeeeee;
+    }
+    .row {
+        /* Foundataion row */
+        background: #fff;
+    }
+
+    div.search-box {
+        background: #fff;
+    }
+    ul.search-results {
+        list-style-type: none;
+    }
+    ul.search-results > li {
+        color: #454545;
+        border-bottom: solid thin #DEDEDE;
+    }
+    .error {
+        color: red;
+    }
+    .highlight {
+        background: #FFF380;
+    }
+    .name {
+        text-align: center;
+    }
+    .emph {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    </style>
+</head>
+<body>
+    <div class="row">        
+        <div class="small-12 large-12 columns">
+            <h3>Instant Concept</h3>
+            <div id="example"></div>
+            <script type="text/jsx" src="src/instant.js"></script>
+        </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+</html>
