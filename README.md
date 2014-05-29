@@ -25,8 +25,8 @@ Indexed `input` are the full title and title word unigrams.
 Main code is in [v1/build/instant.js](https://github.com/miku/elasticsearch-hackfest-2014-05-28/blob/master/v1/build/instant.js).
 
 
-Obeservations and Questions
----------------------------
+Observations and Questions
+--------------------------
 
 * Super fast!
 * Fuzzy matching can be nice, but can also hide better hits.
