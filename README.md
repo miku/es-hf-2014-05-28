@@ -1,8 +1,8 @@
 Hackfest Elasticsearch May 2014
 ===============================
 
-At: 2014-05-28
-In: Berlin, Andreasst 10
+* At: 2014-05-28
+* In: Berlin, Andreasst 10
 
 
 Ideas
