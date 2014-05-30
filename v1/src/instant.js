@@ -46,7 +46,7 @@ var SearchBox = React.createClass({
         $.ajax({
             type: "POST",
             // adjust URL
-            url: "http://localhost:9200/ebl,nep,nl,lfer/_suggest",
+            url: "http://localhost:9201/ebl,nep,nl,lfer/_suggest",
             data: JSON.stringify(data),
             success: function(data, status) {
                 data["suggest"][0]["options"].forEach(function(value) {
@@ -57,7 +57,10 @@ var SearchBox = React.createClass({
             },
             error: function(data, status) {
                 console.debug(data);
-                $this.setState({message: data.statusText + "!! &mdash; watch a GIF instead: <a href='https://mediacru.sh/seoCa5-ohaVv'>https://mediacru.sh/seoCa5-ohaVv</a>"});
+                $this.setState({message: data.statusText +
+                    "! &mdash; watch a GIF instead: " +
+                    "<a href='https://mediacru.sh/seoCa5-ohaVv'>" +
+                    "https://mediacru.sh/seoCa5-ohaVv</a>"});
             },
             dataType: "json"
         });
