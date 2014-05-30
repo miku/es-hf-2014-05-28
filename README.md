@@ -42,7 +42,7 @@ Observations and Questions
 See it in Action
 ----------------
 
-A 30s screen recording as GIF: https://mediacru.sh/seoCa5-ohaVv
+A 30s screen recording: https://mediacru.sh/pKJBp3u4LMYO
 
 Dev
 ---
