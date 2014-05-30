@@ -83,7 +83,9 @@ var SearchBox = React.createClass({
                                placeholder="Just type ..."
                                onChange={this.handleChange} />
                     </div>
-                    <p className="search-message" dangerouslySetInnerHTML={{__html: this.state.message }}></p>
+                    <p className="search-message"
+                       dangerouslySetInnerHTML={{__html: this.state.message }}>
+                    </p>
                     <ul className="search-results">{hits}</ul>
                 </div>);            
 
