@@ -13,7 +13,7 @@ var HitItem = React.createClass({displayName: 'HitItem',
     render: function() {
         return (React.DOM.div(null, React.DOM.span( {dangerouslySetInnerHTML:{__html: this.highlight(
                     this.props.text.trunc(100), this.props.query) }}),
-                "— ", React.DOM.span( {className:"emph"}, 
+                " — ", React.DOM.span( {className:"emph"}, 
                 this.props.payload.id), " in ", React.DOM.span( {className:"emph"}, 
                 this.props.payload.index)));
     }
@@ -46,7 +46,8 @@ var SearchBox = React.createClass({displayName: 'SearchBox',
         $.ajax({
             type: "POST",
             // adjust URL
-            url: "http://localhost:9200/ebl,nep,nl,lfer/_suggest",
+            // url: "http://localhost:9200/ebl,nep,nl,lfer/_suggest",
+            url: "http://139.18.191.111:9200/ebl,nep,nl,lfer/_suggest",
             data: JSON.stringify(data),
             success: function(data, status) {
                 data["suggest"][0]["options"].forEach(function(value) {
@@ -57,7 +58,7 @@ var SearchBox = React.createClass({displayName: 'SearchBox',
             },
             error: function(data, status) {
                 console.debug(data);
-                $this.setState({message: data.statusText});
+                $this.setState({message: data.statusText + "!! &mdash; watch a GIF instead: <a href='https://mediacru.sh/seoCa5-ohaVv'>https://mediacru.sh/seoCa5-ohaVv</a>"});
             },
             dataType: "json"
         });
@@ -80,7 +81,7 @@ var SearchBox = React.createClass({displayName: 'SearchBox',
                                placeholder:"Just type ...",
                                onChange:this.handleChange} )
                     ),
-                    React.DOM.p( {className:"search-message"}, this.state.message),
+                    React.DOM.p( {className:"search-message", dangerouslySetInnerHTML:{__html: this.state.message }}),
                     React.DOM.ul( {className:"search-results"}, hits)
                 ));            
 

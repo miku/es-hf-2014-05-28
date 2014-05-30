@@ -57,7 +57,7 @@ var SearchBox = React.createClass({
             },
             error: function(data, status) {
                 console.debug(data);
-                $this.setState({message: data.statusText});
+                $this.setState({message: data.statusText + "!! &mdash; watch a GIF instead: <a href='https://mediacru.sh/seoCa5-ohaVv'>https://mediacru.sh/seoCa5-ohaVv</a>"});
             },
             dataType: "json"
         });
@@ -80,7 +80,7 @@ var SearchBox = React.createClass({
                                placeholder="Just type ..."
                                onChange={this.handleChange} />
                     </div>
-                    <p className="search-message">{this.state.message}</p>
+                    <p className="search-message" dangerouslySetInnerHTML={{__html: this.state.message }}></p>
                     <ul className="search-results">{hits}</ul>
                 </div>);            
 
